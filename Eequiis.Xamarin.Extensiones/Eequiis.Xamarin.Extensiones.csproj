@@ -5,7 +5,7 @@
     <Authors>Eequiis Vásquez</Authors>
     <Company>Eequiis Software</Company>
     <Description>Extensiones útiles para la plataforma Xamarin.Forms</Description>
-    <Copyright>Eequiis Software 2020</Copyright>
+    <Copyright>2020 Eequiis Software</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/Eequiis/Eequiis.Xamarin.Extensiones</PackageProjectUrl>
   </PropertyGroup>
