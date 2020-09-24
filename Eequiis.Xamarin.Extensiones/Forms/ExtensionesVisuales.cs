@@ -49,6 +49,7 @@ namespace Eequiis.Xamarin.Extensiones
 		/// <param name="entrada">Campo de texto cuyo texto se seleccionará.</param>
 		public static void SelectAllText(this Entry entrada)
 		{
+			if (entrada.Text == null) return;
 			entrada.CursorPosition = 0;
 			entrada.SelectionLength = entrada.Text.Length;
 		}
