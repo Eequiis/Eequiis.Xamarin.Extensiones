@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Eequiis.Xamarin.Extensiones
@@ -7,6 +8,7 @@ namespace Eequiis.Xamarin.Extensiones
 	{
 		private static readonly string MensajeInfoNulo = "(Sin mensaje de información)";
 		private static readonly string MensajeErrorNulo = "(Sin mensaje de error)";
+			
 
 		/// <summary>
 		/// <para>Muestra un cuadro de diálogo informativo, con el mensaje indicado y una opción de aceptar.</para>
@@ -20,7 +22,7 @@ namespace Eequiis.Xamarin.Extensiones
 		/// </summary>
 		/// <param name="pagina">Página que lanzará el cuadro de diálogo.</param>
 		/// <param name="mensaje">Mensaje informativo a mostrar en el cuadro de diálogo.</param>
-		public static void MostrarInfo(this Page pagina, string mensaje)
+		public static Task MostrarInfo(this Page pagina, string mensaje)
 			=> pagina.DisplayAlert("Información", mensaje ?? MensajeInfoNulo, "Aceptar");
 
 		/// <summary>
@@ -35,7 +37,7 @@ namespace Eequiis.Xamarin.Extensiones
 		/// </summary>
 		/// <param name="pagina">Página que lanzará el cuadro de diálogo.</param>
 		/// <param name="mensaje">Mensaje de error a mostrar en el cuadro de diálogo.</param>
-		public static void MostrarError(this Page pagina, string mensaje)
+		public static Task MostrarError(this Page pagina, string mensaje)
 			=> pagina.DisplayAlert("Error", mensaje ?? MensajeErrorNulo, "Aceptar");
 
 		/// <summary>

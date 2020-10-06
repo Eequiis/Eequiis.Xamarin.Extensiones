@@ -4,11 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Eequiis Vásquez</Authors>
     <Company>Eequiis Software</Company>
-    <Description>Extensiones útiles para la plataforma Xamarin.Forms</Description>
+    <Description>Extensiones útiles para la plataforma Xamarin.Forms (páginas y elementos visuales).</Description>
     <Copyright>2020 Eequiis Software</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/Eequiis/Eequiis.Xamarin.Extensiones</PackageProjectUrl>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
