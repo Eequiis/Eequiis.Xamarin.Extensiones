@@ -6,9 +6,10 @@ namespace Eequiis.Xamarin.Extensiones
 {
 	public static class ExtensionesVisuales
 	{
-		private static readonly string MensajeInfoNulo = "(Sin mensaje de información)";
+		private static readonly string MensajeInfoNulo = "(Sin mensaje informativo)";
+		private static readonly string MensajeAvisoNulo = "(Sin mensaje de aviso)";
 		private static readonly string MensajeErrorNulo = "(Sin mensaje de error)";
-			
+
 
 		/// <summary>
 		/// <para>Muestra un cuadro de diálogo informativo, con el mensaje indicado y una opción de aceptar.</para>
@@ -22,8 +23,27 @@ namespace Eequiis.Xamarin.Extensiones
 		/// </summary>
 		/// <param name="pagina">Página que lanzará el cuadro de diálogo.</param>
 		/// <param name="mensaje">Mensaje informativo a mostrar en el cuadro de diálogo.</param>
+		/// <returns>Una tarea que indica si el proceso de mostrar el cuadro de diálogo se ha completado, y que se
+		/// puede esperar asíncronamente.</returns>
 		public static Task MostrarInfo(this Page pagina, string mensaje)
 			=> pagina.DisplayAlert("Información", mensaje ?? MensajeInfoNulo, "Aceptar");
+
+		/// <summary>
+		/// <para>Muestra un cuadro de diálogo de aviso, con el mensaje indicado y una opción de aceptar.</para>
+		/// <para>La página suministrada, que lanzará el cuadro de diálogo, no puede ser nula; mientras que el mensaje
+		/// indicado sí podrá serlo, en cuyo caso se informará en el cuadro de diálogo de que no hay un cuerpo real de
+		/// mensaje de aviso.</para>
+		/// <para>Excepciones:</para>
+		/// <list type="bullet">
+		/// <item><see cref="NullReferenceException"/> - Si la página indicada es nula.</item>
+		/// </list>
+		/// </summary>
+		/// <param name="pagina">Página que lanzará el cuadro de diálogo.</param>
+		/// <param name="mensaje">Mensaje de aviso a mostrar en el cuadro de diálogo.</param>
+		/// <returns>Una tarea que indica si el proceso de mostrar el cuadro de diálogo se ha completado, y que se
+		/// puede esperar asíncronamente.</returns>
+		public static Task MostrarAviso(this Page pagina, string mensaje)
+			=> pagina.DisplayAlert("Aviso", mensaje ?? MensajeAvisoNulo, "Aceptar");
 
 		/// <summary>
 		/// <para>Muestra un cuadro de diálogo de error, con el mensaje indicado y una opción de aceptar.</para>
@@ -37,6 +57,8 @@ namespace Eequiis.Xamarin.Extensiones
 		/// </summary>
 		/// <param name="pagina">Página que lanzará el cuadro de diálogo.</param>
 		/// <param name="mensaje">Mensaje de error a mostrar en el cuadro de diálogo.</param>
+		/// <returns>Una tarea que indica si el proceso de mostrar el cuadro de diálogo se ha completado, y que se
+		/// puede esperar asíncronamente.</returns>
 		public static Task MostrarError(this Page pagina, string mensaje)
 			=> pagina.DisplayAlert("Error", mensaje ?? MensajeErrorNulo, "Aceptar");
 
