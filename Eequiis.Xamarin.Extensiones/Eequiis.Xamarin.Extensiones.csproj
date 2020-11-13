@@ -8,8 +8,17 @@
     <Copyright>2020 Eequiis Software</Copyright>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/Eequiis/Eequiis.Xamarin.Extensiones</PackageProjectUrl>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageTags>C#, Xamarin, DisplayAlert, Entry, SelectAllText</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>Eequiis.Xamarin.Extensiones.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>Eequiis.Xamarin.Extensiones.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
