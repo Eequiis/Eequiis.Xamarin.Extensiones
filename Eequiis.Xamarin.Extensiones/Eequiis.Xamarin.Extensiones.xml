@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Eequiis.Xamarin.Extensiones</name>
+    </assembly>
+    <members>
+        <member name="M:Eequiis.Xamarin.Extensiones.ExtensionesVisuales.MostrarInfo(Xamarin.Forms.Page,System.String)">
+            <summary>
+            <para>Muestra un cuadro de diálogo informativo, con el mensaje indicado y una opción de aceptar.</para>
+            <para>La página suministrada, que lanzará el cuadro de diálogo, no puede ser nula; mientras que el mensaje
+            indicado sí podrá serlo, en cuyo caso el mensaje mostrado en el cuadro de diálogo informará de que no hay
+            un cuerpo real de mensaje informativo.</para>
+            <para>Excepciones:</para>
+            <list type="bullet">
+            <item><see cref="T:System.NullReferenceException"/>Si la página indicada es nula.</item>
+            </list>
+            </summary>
+            <param name="pagina">Página que lanzará el cuadro de diálogo.</param>
+            <param name="mensaje">Mensaje informativo a mostrar en el cuadro de diálogo.</param>
+            <returns>Una tarea que indica si el proceso de mostrar el cuadro de diálogo se ha completado, y que se
+            puede esperar asíncronamente.</returns>
+        </member>
+        <member name="M:Eequiis.Xamarin.Extensiones.ExtensionesVisuales.MostrarAviso(Xamarin.Forms.Page,System.String)">
+            <summary>
+            <para>Muestra un cuadro de diálogo de aviso, con el mensaje indicado y una opción de aceptar.</para>
+            <para>La página suministrada, que lanzará el cuadro de diálogo, no puede ser nula; mientras que el mensaje
+            indicado sí podrá serlo, en cuyo caso se informará en el cuadro de diálogo de que no hay un cuerpo real de
+            mensaje de aviso.</para>
+            <para>Excepciones:</para>
+            <list type="bullet">
+            <item><see cref="T:System.NullReferenceException"/> - Si la página indicada es nula.</item>
+            </list>
+            </summary>
+            <param name="pagina">Página que lanzará el cuadro de diálogo.</param>
+            <param name="mensaje">Mensaje de aviso a mostrar en el cuadro de diálogo.</param>
+            <returns>Una tarea que indica si el proceso de mostrar el cuadro de diálogo se ha completado, y que se
+            puede esperar asíncronamente.</returns>
+        </member>
+        <member name="M:Eequiis.Xamarin.Extensiones.ExtensionesVisuales.MostrarError(Xamarin.Forms.Page,System.String)">
+            <summary>
+            <para>Muestra un cuadro de diálogo de error, con el mensaje indicado y una opción de aceptar.</para>
+            <para>La página suministrada, que lanzará el cuadro de diálogo, no puede ser nula; mientras que el mensaje
+            indicado sí podrá serlo, en cuyo caso el mensaje mostrado en el cuadro de diálogo informará de que no hay
+            un cuerpo real de mensaje de error.</para>
+            <para>Excepciones:</para>
+            <list type="bullet">
+            <item><see cref="T:System.NullReferenceException"/> - Si la página indicada es nula.</item>
+            </list>
+            </summary>
+            <param name="pagina">Página que lanzará el cuadro de diálogo.</param>
+            <param name="mensaje">Mensaje de error a mostrar en el cuadro de diálogo.</param>
+            <returns>Una tarea que indica si el proceso de mostrar el cuadro de diálogo se ha completado, y que se
+            puede esperar asíncronamente.</returns>
+        </member>
+        <member name="M:Eequiis.Xamarin.Extensiones.ExtensionesVisuales.SelectAllText(Xamarin.Forms.Entry)">
+            <summary>
+            <para>Selecciona todo el texto de un elemento visual <see cref="T:Xamarin.Forms.Entry"/>.</para>
+            <para>El campo de texto indicado no puede ser nulo, y si contiene texto, este se seleccionará.</para>
+            <para>Excepciones:</para>
+            <list type="bullet">
+            <item><see cref="T:System.NullReferenceException"/> - Si el campo de texto indicado es nulo.</item>
+            </list>
+            </summary>
+            <param name="entrada">Campo de texto cuyo texto se seleccionará.</param>
+        </member>
+    </members>
+</doc>
